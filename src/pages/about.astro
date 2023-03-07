@@ -2,12 +2,12 @@
 const pageTitle = 'About me'
 
 const identity = {
-  firstName: 'Sarah',
-  country: 'Canada',
-  occupation: 'Technical Writer',
-  hobbies: ['photography', 'birdwatching', 'baseball'],
+  firstName: 'Artyom',
+  country: 'Mexico',
+  occupation: 'web developer',
+  hobbies: ['music', 'gardening', 'muai thai'],
 }
-const skills = ['HTML', 'CSS', 'JavaScript', 'React', 'Astro', 'Writing Docs']
+const skills = ['HTML', 'CSS', 'JavaScript', 'Solid', 'Astro', 'Writing Docs']
 
 const happy = true
 const finished = false
@@ -18,7 +18,7 @@ const fontWeight = 'bold'
 const textCase = 'uppercase'
 
 import './styles/global.css'
-import Navigation from '../components/Navigation.astro'
+import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 ---
 
@@ -42,7 +42,7 @@ import Footer from '../components/Footer.astro'
     </style>
   </head>
   <body>
-    <Navigation />
+    <Header />
 
     <h1>{pageTitle}</h1>
     <h2>... and my new Astro site!</h2>
@@ -79,5 +79,8 @@ import Footer from '../components/Footer.astro'
       )
     }
     <Footer />
+    <script>
+      import '../scripts/menu.js'
+    </script>
   </body>
 </html>
