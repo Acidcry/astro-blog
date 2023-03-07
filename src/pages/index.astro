@@ -1,6 +1,8 @@
 ---
-const pageTitle = 'Home'
+const pageTitle = 'Hello! This is my first app with Astro'
 import './styles/global.css'
+import Navigation from '../components/Navigation.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <html lang="en">
@@ -18,10 +20,9 @@ import './styles/global.css'
     </style>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Navigation />
 
-    <h1>My {pageTitle} Page</h1>
+    <h1>{pageTitle}</h1>
+    <Footer />
   </body>
 </html>
